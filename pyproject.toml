@@ -1,5 +1,5 @@
 description = "Python CMC and CRMF, extending python asn1crypto"
-version = "1.00"
+version = "1.01"
 
 [build-system]
 requires = [

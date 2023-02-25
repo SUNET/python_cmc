@@ -1,5 +1,9 @@
 Extends asn1crypto with CMC and CRMF - https://www.rfc-editor.org/rfc/rfc5272
 
+## Installation
+``` bash
+pip3 install python_cmc
+```
 ## To run, deploy, test and everything run
 ``` bash
 bash dev-run.sh

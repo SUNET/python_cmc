@@ -1,0 +1,23 @@
+description = "Python CMC and CRMF, extending python asn1crypto"
+version = "1.00"
+
+[build-system]
+requires = [
+    "flit_core >=2.0",
+]
+
+[tool.flit.metadata]
+module = "python_cmc"
+
+description-file = "README.md"
+requires-python = ">=3.7"
+
+keywords = "x509,cmc,crmf"
+license = "MIT"
+author = "Victor Näslund"
+author-email = "victor@sunet.se"
+# home-page = "https://github.com/SUNET/python_cmc"
+
+requires = [
+    "asn1crypto>=1.4.0",
+]

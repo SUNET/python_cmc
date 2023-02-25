@@ -1,0 +1,5 @@
+[MASTER]
+
+[MESSAGES CONTROL]
+disable=missing-class-docstring
+

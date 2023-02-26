@@ -58,7 +58,7 @@ class PublishTrustAnchors(asn1_cms.Sequence):  # type: ignore
     ]
 
 
-class SinglePubInfoPubMethod(asn1_cms.Enumerated):  # type: ignore
+class SinglePubInfoPubMethod(asn1_cms.Integer):  # type: ignore
     _map = {
         0: "dontCare",
         1: "x500",
@@ -78,7 +78,7 @@ class SinglePubInfos(asn1_cms.SequenceOf):  # type: ignore
     _child_spec = SinglePubInfo
 
 
-class PKIPublicationInfoAction(asn1_cms.Enumerated):  # type: ignore
+class PKIPublicationInfoAction(asn1_cms.Integer):  # type: ignore
     _map = {
         0: "dontPublish",
         1: "pleasePublish",
@@ -118,7 +118,7 @@ class TaggedContentInfos(asn1_cms.SequenceOf):  # type: ignore
     _child_spec = TaggedContentInfo
 
 
-class CMCStatus(asn1_cms.Enumerated):  # type: ignore
+class CMCStatus(asn1_cms.Integer):  # type: ignore
     # 1: 'reserved',
     _map = {
         0: "success",
@@ -131,7 +131,7 @@ class CMCStatus(asn1_cms.Enumerated):  # type: ignore
     }
 
 
-class CMCFailInfo(asn1_cms.Enumerated):  # type: ignore
+class CMCFailInfo(asn1_cms.Integer):  # type: ignore
     _map = {
         0: "badAlg",
         1: "badMessageCheck",

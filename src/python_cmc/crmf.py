@@ -70,7 +70,7 @@ class PBMParameter(asn1_cms.Sequence):  # type: ignore
     ]
 
 
-class SubsequentMessage(asn1_cms.Enumerated):  # type: ignore
+class SubsequentMessage(asn1_cms.Integer):  # type: ignore
     _map = {
         0: "encrCert",
         1: "challengeResp",
